@@ -32,4 +32,6 @@ RUN chmod -R +x /usr/scripts
 ADD files/xpra.conf /home/desktop/.xpra/
 RUN chown -R desktop /home/desktop
 
+EXPOSE 9876
+
 ENTRYPOINT [ "/usr/scripts/exec.sh" ]
